@@ -1,0 +1,26 @@
+{
+  "name": "android_node_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx nodemon  --env-file=.env app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityadaharwal963/android_node_api.git"
+  },
+  "author": "aditya daharwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adityadaharwal963/android_node_api/issues"
+  },
+  "homepage": "https://github.com/adityadaharwal963/android_node_api#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
