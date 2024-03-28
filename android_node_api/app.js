@@ -69,7 +69,7 @@ app.post('/api/register/',async(req, res) => {
         }
    
     } catch (e) {
-        res.status(400).json({'success':false, error: e.message });
+        res.status(400).json({'success':false, "msg": e.message });
     }
 
 
@@ -93,7 +93,7 @@ app.get('/api/login/',async (req, res) => {
        
       
     } catch (e) {
-        res.status(500).json({ error: e.message});
+        res.status(400).json({ 'success':false,"msg": e.message});
     }
 
 
@@ -120,7 +120,7 @@ app.post('/api/property/torent/',async(req, res) => {
         
    
     } catch (e) {
-        res.status(400).json({'success':false, error: e.message });
+        res.status(400).json({'success':false, "msg": e.message });
     }
 
 
@@ -134,7 +134,7 @@ app.get('/api/property/onrent/',async(req, res) => {
             res.json({'success':true,"list":properties,"msg":"verified to rent"});
         
     } catch (e) {
-        res.status(400).json({'success':false, error: e.message });
+        res.status(400).json({'success':false, "msg": e.message });
     }
 
 
@@ -153,7 +153,7 @@ app.get('/api/property/onrent/:rentId',async(req, res) => {
             res.json({'success':true,"list":properties,"msg":"return properties"});
         
     } catch (e) {
-        res.status(400).json({'success':false, error: e.message });
+        res.status(400).json({'success':false, "msg": e.message });
     }
 
 });
@@ -172,7 +172,7 @@ app.get('/api/property/onrent/user/:userid',async(req, res) => {
        
         
     } catch (e) {
-        res.status(400).json({'success':false, error: e.message });
+        res.status(400).json({'success':false, "msg": e.message });
     }
 
 });
